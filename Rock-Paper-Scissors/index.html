@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./utility.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="default">
+        <div class="default-emoji-con user-selected">
+            <img id="left-emoji" class="default-emoji" src="./img/righthand.png" alt="">
+        </div>
+        <div class="default-emoji-con computer-selected">
+            <img id="right-emoji" class="default-emoji" src="./img/lefthand.png" alt="">
+        </div>
+    </div>
+    <div class="score-board flex">
+        <div>
+            <div id="user-label" class="badge">You</div>
+            <div id="user-score">0</div>
+        </div>
+
+        <div>
+            <div id="computer-label" class="badge">Com</div>
+            <div id="computer-score">0</div>
+        </div>
+    </div>
+    <div class="result">
+        <p>Select Your choice</p>
+    </div>
+
+    <div class="choices">
+        <div id="rock" class="choice" data-name='rock'>
+            <img src="./img/rock.png" alt="choice">
+        </div>
+        <div id="paper" class="choice" data-name='paper'>
+            <img src="./img/paper.png" alt="choice">
+        </div>
+        <div id="scissor" class="choice" data-name='scissors'>
+            <img src="./img/scissors.png" alt="choice">
+        </div>
+    </div>
+    <div class="captions">
+        <p>Rock</p>
+        <p>Paper</p>
+        <p>Scissor</p>
+    </div>
+    <div id="action-message">Make your move</div>
+</body>
+
+</html>
