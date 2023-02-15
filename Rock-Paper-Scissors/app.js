@@ -14,10 +14,6 @@ const leftEmoji = document.getElementById('left-emoji');
 const leftShow = document.querySelector('.user-selected');
 const rightShow = document.querySelector('.computer-selected');
 
-
-
-const imgSrc = ['rock.png','paper.png','scissor.png'];
-
 userChoices.forEach((ch) => {
     ch.addEventListener('click', () => {
         const choise = ch.dataset.name;
