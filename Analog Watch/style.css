@@ -146,3 +146,36 @@ h1 {
     background-color: rgb(251, 195, 90);
     height: 100px;
 }
+
+.on-off-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto 0;
+}
+
+.on-off-button .toggle {
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 35px;
+    position: relative;
+    cursor: pointer;
+}
+.on-off-button .toggle .toggle-button {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(2, 141, 2);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.on-off-button .toggle .not-active {
+    left: 33px;
+    background-color: red;
+}
